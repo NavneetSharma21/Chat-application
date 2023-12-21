@@ -1,0 +1,128 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    min-height: 90vh;
+   
+}
+.user-window{
+    width: 30%;
+    background-color: rgb(24, 22, 21);
+    min-height: 60vh;
+    padding: 10px;
+    color: rgb(251, 244, 244);
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.user-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.user-list{
+    padding: 5px;
+}
+.user-list p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.chat-window{
+    width:100%;
+    background-color: rgb(145, 164, 164);
+    margin: 0px 0px 0px 10px;
+    padding: 16px;
+    min-height: 90vh;
+    border-radius: 10px;
+}
+.chats{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: stretch;
+    overflow-y: auto;
+    height: 80vh;
+    
+}
+.chats .user-join{
+    background-color: aliceblue;
+    width: max-content;
+    padding: 8px;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: .9rem;
+    margin-bottom: 15px;
+}
+.chats .message{
+    background-color: aliceblue;
+    padding: 8px;
+    font-size: .9rem;
+    width: 350px;
+    height:max-content;
+    margin-bottom: 15px;
+    border-radius: 0px 15px 15px 15px;
+    
+}
+.chats .message p{
+    font-size: 1rem;
+    margin-top: 5px;
+    color: rgb(43, 38, 38);
+ 
+    }
+.chats .outgoing{
+   margin-left: auto;
+    padding: 8px;
+    font-size: .9rem;  
+    border-radius: 15px 15px  0px 15px;
+    max-width: 400px;
+    text-align: right;
+    background-color: rgb(34, 90, 92);
+}
+
+
+.chat-window .user-input{     
+   display: flex;
+   justify-content: space-between;
+   align-items: stretch;
+   padding: 10px ;
+    
+}
+.user-input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px 0px 0px 10px;
+    font-size: .9rem;
+    padding: 10px;
+}
+.user-input button{
+    background-color: rgb(13, 37, 174);
+    border: none;
+    outline: none;
+    border-radius: 0px 10px 10px 0px;
+    font-size: .9rem;
+    padding: 10px;
+    color: #F8F8F8;
+    letter-spacing: .5px;
+    }

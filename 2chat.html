@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="chat.css" />
+    <title>Chat app by Navneet</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="user-window">
+        <div class="user-head">
+          <h3>people</h3>
+          <h4 class="user-count">0</h4>
+        </div>
+        <div class="user-list"></div>
+      </div>
+
+      <div class="chat-window">
+        <div class="chats">
+          <!--    <div class="user-join">
+                  <p><b>harry</b> is joined chats</p>
+                    </div>              
+            
+          <div class="message incoming"></div>
+          <div class="message outgoing"></div>
+          
+          user joined div-->
+        </div>
+        <div class="user-input">
+          <input type="text" id="user-msg" placeholder="type your message" />
+          <button type="button" id="msg-send">send</button>
+        </div>
+      </div> 
+    </div>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="2client.js"></script>
+</html>
